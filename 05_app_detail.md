@@ -4,6 +4,7 @@
 - 利用するgemを記述してない
 - 管理者のトップページがない
 - 管理者の制作ステータスを更新するアクションがない
+- public関連のurlに:end_user_idが付属している．他の顧客の情報にアクセスする必要がないため不要
 
 ## public/end_users
 - destroyアクションのHTTPメソッドがPATCHでない(論理削除のため)
@@ -25,8 +26,7 @@
 - このコントローラーがある
 
 ## public/addresses
-- 全体的にURLが適切でない
-- URLのaddressを複数形にしていない
+- URLのaddressを複数形にしていないため不適切
 
 ## admin/items
 - newとindexアクションのURLが重複している
@@ -36,7 +36,7 @@
 - updateアクションがない
 
 ## admin/order_items
-- このコントローラがある
+- 注文履歴に関する情報を表示する機能はordersコントローラで十分であるため，order_itemsコントローラは不要
 - このコントローラの代わりのordersコントローラがない
 
 
